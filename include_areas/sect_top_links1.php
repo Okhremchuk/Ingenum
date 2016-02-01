@@ -1,5 +1,7 @@
-<ul class="nav nav-pills" >
-    <li><span class="address">г. Киев, ул. Стройиндустрии, 8-б</span></li>
+<ul class="nav nav-pills">
+    <li><span class="address">г. Киев, ул. Стройиндустрии, 8-б</span>
+
+    </li>
 
     <li>
         <ul class="nav navbar-nav phone-ul">
