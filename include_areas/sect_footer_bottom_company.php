@@ -1,0 +1,1 @@
+&copy; 2011-2014 <a href="/" target="_blank" rel="nofollow" >INGENUM</a> | Работает на 1С-Битрикс

@@ -1,0 +1,32 @@
+<div class="modal-header">
+	<button type="button" class="close" data-ng-click="ok();">
+		<span aria-hidden="true">&times;</span>
+	</button>
+	<h3 class="modal-title">{{message.popUpTitle}}</h3>
+</div>
+<div class="modal-body">
+	<p ng-bind-html="message.resultMessageAuto"></p>
+	<p ng-bind-html="message.resultMessage"></p>
+	<p ng-bind-html="message.resultSubMessage"></p>
+	<table class="table">
+		<tbody>
+			<tr ng-repeat="(key, field) in fields track by $index">
+				<th ng-bind-html="field">
+				</th>
+				<td ng-if="!isShowList(sendField[key])">
+					{{sendField[key]}}
+				</td>
+				<td ng-if="isShowList(sendField[key])">
+					<ul class="list-unstyled">
+						<li ng-repeat="item in sendField[key] track by $index" >
+							{{item}}
+						</li>
+					</ul>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div class="modal-footer">
+	<button class="btn btn-success" ng-click="ok()" ng-bind-html="message.closeBtn"></button>
+</div>
